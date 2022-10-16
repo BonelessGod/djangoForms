@@ -1,0 +1,40 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Union Skateboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{% static 'Forms/assets/logo/logo-black.png' %}">
+  <link rel="preload" href="{% static 'Forms/assets/image/img-skatepark-outdoor.webp' %}">
+  <link rel="preload" href="{% static 'Forms/assets/logo/logo-black.png' %}">
+  <link rel=stylesheet href="{% static 'Forms/style/index.css'%}">
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBStpaUY0HAv6-pKWYW_ByfiEey-Z0yjWE&libraries=places&language=fr"> </script> -->
+</head>
+
+<div class="usb-header__container">
+
+    <img src="{% static 'Forms/assets/logo/logo-white.png' %}" alt="logo de Union Skateboard" class="usb-header__container-logo" routerLink="">
+
+    <div class="usb-header__container-text">
+
+        <h1>Union Skateboard</h1>
+        <h2>Depuis 2022</h2>
+
+    </div>
+
+</div>
+
+<div class="usb-header__nav">
+    <div class="usb-header__nav-tablist"> 
+    <a href="https://unionskateboard.fr/" class="usb-header__nav-tablist-tab tab" id="home" routerLink="">Accueil</a>
+    <a href="https://unionskateboard.fr/event" class="usb-header__nav-tablist-tab tab" id="event" routerLink="event">Évènement</a>
+    <a href="https://unionskateboard.fr/contact" class="usb-header__nav-tablist-tab tab" id="contact" routerLink="contact">Contact</a>
+    <a href="https://unionskateboard.fr/join" class="usb-header__nav-tablist-tab tab" id="join" routerLink="join">Inscription</a>
+    </div> 
+    <app-disclaimer></app-disclaimer>
+</div>
+
+{% block content %} {% endblock %}

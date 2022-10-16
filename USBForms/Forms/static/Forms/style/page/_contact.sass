@@ -1,0 +1,47 @@
+.usb-contact, .usb-flip
+    background: url('../../assets/image/img-skatepark-outdoor.webp')  no-repeat center fixed
+    background-size: cover
+    color: $color-text-light
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 1rem 0 1rem 0
+        &-title
+            height: 20rem
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            p, h1
+                margin: 0
+                padding: 0.5rem
+                border-radius: 0.5rem
+                text-shadow: 0 0 5rem $color-text-dark
+            h1  
+                padding: 2rem 1rem 2rem 1rem
+            
+                background: url('../../assets/image/skate.png') no-repeat center 
+                background-size: contain
+                
+        &-text
+            text-align: justify
+            margin: 1rem
+            padding: 1rem
+            text-shadow: 0 0 0.5rem $color-text-dark
+            background-color: $color-secondary-transparent
+            border-radius: 0.5rem
+
+        &-link 
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            text-align: center
+            transition: 330ms
+            a
+                padding: 2rem 1rem 2rem 1rem
+                &:hover
+                    transform: scale(1.2)
+            
+        

@@ -1,0 +1,56 @@
+.usb-location__container
+    display: flex
+    flex-flow: row 
+
+    overflow-x: scroll
+
+
+    justify-content: space-between
+
+    box-shadow: 0 0 0.5rem $color-text-dark
+    align-items: center
+    text-shadow: 0 0 0.5rem $color-text-dark
+
+    &-location 
+        background-color: $color-secondary-transparent
+        border-radius: 0.5rem
+        padding: 1rem
+        margin: 2rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background-filter: blur(0.5rem)
+        scroll-snap-type: x mandatory
+        @media (min-width: $media-max-width-sm) 
+            flex-direction: row
+            width: 30rem
+            
+            
+        
+        width: 20rem
+        &-link  
+            display: flex
+            flex-direction: row
+            align-items: center
+            a
+                img
+                    height: 3rem
+                    width: 3rem
+                    background-color: $color-secondary-light
+                    padding: 0.5rem
+                    margin: 0.5rem
+                    border-radius: 0.5rem
+                    transition: 330ms
+                    &:hover
+                        background-color: $color-primary-transparent
+            
+        ul
+            padding: 0
+            li
+                list-style-type: none
+        &-image
+            margin: 0 0 0 1rem
+            img
+                width: auto
+                height: 12rem
+                border-radius: 0.5rem

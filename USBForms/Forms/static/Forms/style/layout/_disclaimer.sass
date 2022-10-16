@@ -1,0 +1,37 @@
+.usb-disclaimer__container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background: $color-primary-dark
+
+    align-items: center
+    &-text
+        overflow: hidden
+        background: $color-primary-dark
+        width: 75%
+        border-right: solid rgba(0,0,0,0.5) 1px
+    &:first-child
+        p
+            font-family: 'Montserrat', sans-serif
+            color: $color-text-light
+            font-size: 0.75rem
+            text-shadow: 0 0 0.5rem $color-text-dark
+            display: inline-block
+            padding: 0rem 2rem 0rem 100%
+            margin: 0.5rem  
+            white-space: nowrap
+            animation: textScrolling 20s linear infinite
+    &-link 
+        width: 25%
+        height: auto
+        font-size: 0.75rem
+        text-align: center
+        color: $color-text-light
+        white-space: nowrap
+
+@keyframes textScrolling 
+    0%
+        transform: translate3d(0,0,0)
+    100%
+        transform: translate3d(-100%,0,0)
+        

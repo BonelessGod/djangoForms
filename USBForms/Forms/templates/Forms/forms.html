@@ -1,0 +1,16 @@
+{% extends 'Forms/header.html' %}
+
+{% block content %}
+
+<p>
+    Tu souhaites participer au super Game of Skate de l'USB?
+    Réponds au formulaire ci-dessous pour t'inscrire!
+<p>
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Envoyer">
+</form>
+
+{% endblock %}
